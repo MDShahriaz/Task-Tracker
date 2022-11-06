@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text_detail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+<TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/des"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/des"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/txtDescription"
+        app:layout_constraintTop_toBottomOf="@id/txtDescription"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Id"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/information"
+        app:layout_constraintTop_toBottomOf="@id/information"
+        app:layout_constraintBottom_toTopOf="@id/information"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/spentTimeHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hour"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/Id"
+        app:layout_constraintTop_toBottomOf="@id/Id"
+        app:layout_constraintBottom_toTopOf="@id/Id"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/spentTimeMinute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minute"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/spentTimeHour"
+        app:layout_constraintTop_toBottomOf="@id/spentTimeHour"
+        app:layout_constraintBottom_toTopOf="@id/spentTimeHour"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/spentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spent_time"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/spentTimeMinute"
+        app:layout_constraintTop_toBottomOf="@id/spentTimeMinute"
+        app:layout_constraintBottom_toTopOf="@id/spentTimeMinute"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Log In</string>
+    <string name="Log_in">Login</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Description</string>
+    <string name="hour">hour</string>
+    <string name="minute">minute</string>
+    <string name="please_wait">Please wait..</string>
+    <string name="des">Description</string>
+    <string name="spent_time">Spent Time</string>
+    <!--    <string-array name="countries">-->
+    <!--        <item>All Countries</item>-->
+    <!--        <item>India</item>-->
+    <!--        <item>pak</item>-->
+    <!--        <item>southafrica</item>-->
+    <!--        <item>srl</item>-->
+    <!--        <item>china</item>-->
+    <!--    </string-array>-->
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context=".ui.home.BottomSheetFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id = "@+id/descriptionContainer"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:helperText=""
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:hint="Description"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spentContainer"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:helperText=""
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/spentCounter1"
+        app:layout_constraintTop_toBottomOf="@id/descriptionContainer"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/spentHour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:inputType="number"
+            android:paddingStart="20dp"
+            android:hint="Spent Hour(s)"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/spentCounter1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:helperTextTextColor="@android:color/holo_red_dark"
+        android:layout_width="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toEndOf="@id/spentContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionContainer"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/spentMinute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLength="16"
+            android:inputType="number"
+            android:paddingStart="20dp"
+            android:hint="Spent Minute(s)"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id = "@+id/bottomSheetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:background="@drawable/borderbutton"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spentContainer"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
